@@ -4,6 +4,6 @@ import { HomePage } from "./ui/HomePage";
 
 export default function Home() {
   return (
-    <div className='flex flex-row'><Dashboard /><HomePage /></div>
+    <div className='w-screen'><Dashboard /><HomePage /></div>
   );
 }
