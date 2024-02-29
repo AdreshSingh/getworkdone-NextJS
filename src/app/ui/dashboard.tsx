@@ -6,7 +6,7 @@ import { FaFire } from 'react-icons/fa';
 //     return (<div>{icons.icon}</div>);
 // }
 
-const Tryit = ({ icon }) => {
+const Tryit = (icon:any) => {
     return (
         <div className='w-full bg-purple-400 p-4 border-2 border-slate-400 rounded-md hover:bg-blue-200 hover:text-black focus:ring-1 outline-none'>
             {icon}
