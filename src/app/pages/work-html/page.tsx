@@ -1,6 +1,6 @@
 import { Task, task } from "../../ui/task";
 
-export default  () => {
+export default function  Page(){
     const data: task[] = [
         {
             id: 1,
@@ -23,7 +23,7 @@ export default  () => {
  data.map((item) => {
     return (
             <>
-         <div className="bg-purple-300 text-white font-extrabold p-2 w-">
+         <div key={item.id} className="bg-purple-300 text-white font-extrabold p-2 w-">
             {item.taskCategory}</div>
             <div className="grid grid-cols-1 md:grid-cols-3 bg-indigo-500">
             <Task key={item.id} taskTitle={item.taskTitle} taskBy={item.taskBy} taskDate={item.taskDate} />
